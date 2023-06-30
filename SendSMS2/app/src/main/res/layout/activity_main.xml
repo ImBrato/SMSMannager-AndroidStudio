@@ -9,15 +9,27 @@
     android:orientation="vertical"
     android:padding="15dp">
 
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="SMS Manager"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="50dp"
+        />
     <EditText
         android:background="@android:drawable/editbox_background"
         android:inputType="phone"
         android:maxLength="12"
         android:id="@+id/editTextPhone"
         android:padding="15dp"
-        android:hint="Enter Phone Number"
+        android:hint="Nhập số điện thoại người nhận"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -27,15 +39,15 @@
         android:padding="15dp"
         android:inputType="textMultiLine"
         android:id="@+id/editTextContent"
-        android:hint="Enter Massage"
+        android:hint="Nhập nội dung tin nhắn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:lines="5"/>
     <Button
         android:id="@+id/btnSent"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Sent SMS"
+        android:text="Gửi tin nhắn"
         android:textAllCaps="false"
         android:layout_marginTop="20dp"/>
 </LinearLayout>

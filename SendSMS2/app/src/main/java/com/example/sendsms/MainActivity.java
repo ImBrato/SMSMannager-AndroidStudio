@@ -64,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         if(!phone.isEmpty() && !message.isEmpty()){
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phone, null, message, null, null);
-            Toast.makeText(this,"SMS sent successfully", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Gửi tin nhắn thành công", Toast.LENGTH_LONG).show();
         }
         else {
-            Toast.makeText(this,"Please enter phone number and message!!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Hãy nhập thông tin người gửi và nội dung!", Toast.LENGTH_LONG).show();
         }
     }
 }
